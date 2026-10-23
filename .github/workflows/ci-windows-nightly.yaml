@@ -37,6 +37,7 @@ jobs:
       - name: Pre-Upload
         run: |
             ls
+            ls ./bin
             mkdir upload 
             xcopy "bin\*" "upload\" /E /H /Y
       # Uploads the artifact to the action page
